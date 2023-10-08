@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  padding: 33px 36px 29px;
+
+  .title {
+    text-align: center;
+  }
+
+  .emailIcon {
+    align-self: center;
+  }
+
+  .description {
+    color: var(--color-light-900);
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  .button {
+    width: inherit;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
