@@ -1,0 +1,38 @@
+.card {
+  width: 100%;
+  max-width: 413px;
+  padding: 33px 36px 29px;
+
+  .title {
+    margin-bottom: 27px;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 30px;
+
+    .button {
+      width: inherit;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.caption {
+  width: 100%;
+  margin-bottom: 11px;
+  color: var(--color-light-900);
+  text-align: center;
+}
+
+.signInLink {
+  display: flex;
+  justify-content: center;
+
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-500);
+}
