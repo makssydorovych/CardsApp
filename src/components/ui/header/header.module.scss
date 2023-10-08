@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+  padding: 0 136px;
+
+  .userBlock {
+    display: flex;
+    align-items: center;
+
+    .userName {
+      margin-right: 14px;
+      border-bottom-style: dashed;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 36px;
+    }
+  }
+}
