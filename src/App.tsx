@@ -4,7 +4,8 @@ export function App() {
   return (
     <div>
       Hello
-      <Typography variant={'body2'}> Privet mir</Typography>
+      <Typography variant={'body2'}> One</Typography>
+        <Typography variant={'body1'}> Two</Typography>
     </div>
   )
 }
