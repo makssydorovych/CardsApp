@@ -4,8 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 import s from './personal-information.module.scss'
 
-import Edit from '@/assets/icons/edit.tsx'
-import Logout from '@/assets/icons/logout.tsx'
+import { Edit, Logout } from '@/assets'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ControlledTextField } from '@/components/ui/controlled'

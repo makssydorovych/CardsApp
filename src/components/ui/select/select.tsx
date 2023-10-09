@@ -6,8 +6,7 @@ import { Typography } from '../typography'
 
 import s from './select.module.scss'
 
-import { ArrowDown } from '@/assets/icons/arrow-down'
-import { ArrowUp } from '@/assets/icons/arrow-up'
+import { ArrowDown, ArrowUp } from '@/assets'
 
 type Item = { value: string | number; label: string | number }
 

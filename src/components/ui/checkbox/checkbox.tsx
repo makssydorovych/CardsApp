@@ -2,7 +2,7 @@ import * as CheckboxRadix from '@radix-ui/react-checkbox'
 
 import s from './checkbox.module.scss'
 
-import { CheckMark } from '@/assets/icons/check-mark'
+import { CheckMark } from '@/assets'
 import { Typography } from '@/components/ui/typography'
 
 export type CheckboxProps = {

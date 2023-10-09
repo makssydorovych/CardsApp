@@ -11,7 +11,7 @@ import {
 
 import s from './modal.module.scss'
 
-import { Close } from '@/assets/icons'
+import { Close } from '@/assets'
 
 export type ModalSize = 'sm' | 'md' | 'lg'
 

@@ -1,7 +1,10 @@
 import { ComponentPropsWithoutRef, ElementRef, forwardRef, JSX } from 'react'
-import { Typography } from '@/components/ui/typography'
-import s from './radio-group.module.scss'
+
 import * as Radio from '@radix-ui/react-radio-group'
+
+import s from './radio-group.module.scss'
+
+import { Typography } from '@/components/ui/typography'
 
 export type RadioItemProps = {
   title: string
