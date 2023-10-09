@@ -6,6 +6,7 @@ export function App() {
       Hello
       <Typography variant={'body2'}> One</Typography>
         <Typography variant={'body1'}> Two1</Typography>
+        <Typography variant={'large'}> three</Typography>
     </div>
   )
 }
