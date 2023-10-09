@@ -5,7 +5,7 @@ export function App() {
     <div>
       Hello
       <Typography variant={'body2'}> One</Typography>
-        <Typography variant={'body1'}> Two</Typography>
+        <Typography variant={'body1'}> Two1</Typography>
     </div>
   )
 }
