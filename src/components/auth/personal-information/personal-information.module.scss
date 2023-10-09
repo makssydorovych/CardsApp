@@ -1,0 +1,105 @@
+.personalInformation {
+  max-width: 413px;
+  padding: 33px 33px 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .photoContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6px;
+
+    .photoBox {
+      position: relative;
+
+      img {
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .photoEditButton {
+        all: unset;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background: var(--dark-300, #4c4c4c);
+        box-shadow: 0 2px 10px 0 rgba(109, 109, 109, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:focus-visible {
+          outline: var(--outline-focus);
+        }
+      }
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .changeNameForm {
+    width: 100%;
+  }
+
+  .title {
+    margin-bottom: 27px;
+    text-align: center;
+  }
+
+  .nameContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .editableNameInput {
+    margin-top: 12px;
+    margin-bottom: 36px;
+  }
+
+  .name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .editNameButton {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+
+    &:focus-visible {
+      outline: var(--outline-focus);
+    }
+  }
+
+  .email {
+    margin-bottom: 13px;
+    color: var(--color-dark-100);
+    text-align: center;
+  }
+
+  .saveChangesButton {
+    width: 84%;
+    text-align: center;
+  }
+}
