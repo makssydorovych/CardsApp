@@ -4,7 +4,7 @@ import { Typography } from '../../ui/typography'
 
 import s from './check-email.module.scss'
 
-import { Email } from '@/assets/icons/email'
+import { Email } from '@/assets'
 
 export const CheckEmail = () => {
   return (

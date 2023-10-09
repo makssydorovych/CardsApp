@@ -4,7 +4,7 @@ import { Typography } from '../typography'
 
 import s from './text-field.module.scss'
 
-import { Eye, EyeOff, Search } from '@/assets/icons'
+import { Eye, EyeOff, Search } from '@/assets'
 
 export type TextFieldProps = {
   onValueChange?: (value: string) => void
