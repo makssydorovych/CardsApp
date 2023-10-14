@@ -1,8 +1,13 @@
-export function App() {
-  return (
-    <div>
-      Hello
+import { Provider } from 'react-redux'
 
-    </div>
+import { Router } from '@/router'
+import { store } from '@/services/store'
+
+export function App() {
+    
+  return (
+    <Provider store={store}>
+      <Router />
+    </Provider>
   )
 }
