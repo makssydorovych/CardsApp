@@ -1,37 +1,18 @@
 import { DevTool } from '@hookform/devtools'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 
 import s from './sign-up.module.scss'
 
+import { SingUpForm, useSignUpScheme } from '@/components/schemes/use-sign-up-scheme.ts'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ControlledTextField } from '@/components/ui/controlled'
 import { Typography } from '@/components/ui/typography'
 
-const schema = z.object({
-  email: z.string().email('Invalid email address').nonempty('Enter email'),
-  password: z.string().nonempty('Enter password'),
-  rememberMe: z.boolean().optional(),
-})
-
-type FormType = z.infer<typeof schema>
-
 type Props = {
-  onSubmit: (data: FormType) => void
+  onSubmit: (data: SingUpForm) => void
 }
-
 export const SignUp = (props: Props) => {
-  const { control, handleSubmit } = useForm<FormType>({
-    mode: 'onSubmit',
-    resolver: zodResolver(schema),
-    defaultValues: {
-      email: '',
-      password: '',
-      rememberMe: false,
-    },
-  })
+  const { handleSubmit, control } = useSignUpScheme()
 
   const handleFormSubmitted = handleSubmit(props.onSubmit)
 
@@ -61,7 +42,7 @@ export const SignUp = (props: Props) => {
               placeholder={'Confirm password'}
               label={'Confirm password'}
               type={'password'}
-              name={'password'}
+              name={'confirmPassword'}
               control={control}
             />
           </div>
