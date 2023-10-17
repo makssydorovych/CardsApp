@@ -4,8 +4,8 @@ import { z } from 'zod'
 
 const schema = z.object({
   email: z.string().email('Invalid email address').nonempty('Enter email'),
-  password: z.string().nonempty('Enter password'),
-  confirmPassword: z.string().nonempty('Confirm your password'),
+  password: z.string().min(3).nonempty('Enter password'),
+  confirmPassword: z.string().min(3).nonempty('Confirm your password'),
   rememberMe: z.boolean().optional(),
 })
 
