@@ -1,5 +1,7 @@
 import { SignIn } from '@/components/auth'
+import {useLoginMutation} from "@/services/auth/auth/auth.service.ts";
 
 export const Login = () => {
-  return <SignIn onSubmit={() => {}} />
+  const[logIn] = useLoginMutation()
+  return <SignIn onSubmit={logIn} />
 }
