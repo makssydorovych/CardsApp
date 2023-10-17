@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 400px;
+  padding: 30px 0;
+
+  .imageBlock {
+    width: 100%;
+    margin-bottom: 24px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .fileUploader {
+    margin-bottom: 30px;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .isPrivate {
+    margin-left: -130%;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+}

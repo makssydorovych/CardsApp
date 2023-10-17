@@ -1,10 +1,16 @@
 .header {
+  position: sticky;
+  top: 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   height: 60px;
   padding: 0 136px;
+
+  background-color: var(--color-dark-700);
+  border-bottom: 1px solid var(--color-dark-500);
 
   .userBlock {
     display: flex;
