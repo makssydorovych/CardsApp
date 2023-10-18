@@ -11,6 +11,7 @@ import { Decks } from '@/pages/decks/decks.tsx'
 import { Login } from '@/pages/login/login.tsx'
 import { useGetDecksQuery } from '@/services/decks'
 import {Header} from "@/components/ui/header";
+import {useMeQuery} from "@/services/auth/auth/auth.service.ts";
 
 const publicRoutes: RouteObject[] = [
   {
@@ -54,7 +55,10 @@ export const Router = () => {
 }
 
 function PrivateRoutes() {
-  const isAuthenticated = true
+  const{isError, isLoading} = useMeQuery()
+  const isAuthenticated = !isError
+  if(isLoading) return <div>Loading....</div>
+
 
   return isAuthenticated ? <Outlet /> : <Navigate to="/login" />
 }
